@@ -11,5 +11,12 @@ function getPlayers() {
 }
 
 function playGame() {
-  var players = getPlayers();
+  var players = getPlayers(),
+  scores = [],
+  i = 0,
+  results = document.getElementById("results");
+  for (i = 0; i < players; i++) {
+    scores[i] = Math.floor(Math.random() * 6)+1;
+    results.innerHTML += "Player " + (i + 1) + ": " + scores[i] + "<br/>";
+  }
 }

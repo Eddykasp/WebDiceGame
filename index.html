@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-UK">
+<head>
+    <meta name="author" content="Max Kasperowski">
+    <meta name="description"
+        content="A browser version of the dice game previously programmed in Java.">
+    <meta name="keywords" content="dice game random">
+    <meta name="version" content="26.06.2015">
+    <meta charset="utf-8">
+
+    <script src="script.js" defer="true"></script>
+    <!--[if lt IE 9]>
+        <script src =
+            "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <title>Dice</title>
+</head>
+<header>
+    <h1>Welcome to Dice!</h1>
+</header>
+<body>
+    <p id="playersLabel">How many players are there?</p>
+    <input id="playersInput" type="text">
+    <button onclick="getPlayers()">Confirm</button>
+</body>
+<footer>
+    Copyright (c) 2015 Max Kasperowski All Rights Reserved.
+</footer>
+</html>
